@@ -18,7 +18,7 @@ module.exports = {
   /*
   ** Build configuration
   */
-  build: {
+  // build: {
     /*
     ** Run ESLint on save
     */
@@ -32,7 +32,7 @@ module.exports = {
     //     })
     //   }
     // }
-  },
+  // },
   css: [
     "tachyons/css/tachyons.min.css", 
     "tachyons-debug/css/tachyons-debug.min.css"

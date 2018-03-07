@@ -1,16 +1,13 @@
 <template>
   <h1 class="f1 code">Hello world
     <ul>
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
+    <li v-for='user in users'>{{ user.login }}</li>
   </ul>
-  {{users}}
   </h1>
 </template>
 
 <script>
-  import axios from '~plugins/axios'
+  import axios from '~/plugins/axios'
 
   export default {
     asyncData() {
