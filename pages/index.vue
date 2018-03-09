@@ -1,8 +1,7 @@
 <template>
   <h1 class="f1 code">Hello world
-    {{ items }}
     <ul>
-    <li v-for='user in this.$store.state.users' :key="user.id">{{ user.login }}</li>
+    <li v-for='user in users'>{{ user.login }}</li>
   </ul>
   </h1>
 </template>
@@ -19,8 +18,7 @@
     //     }))
     // }
     computed: mapState([
-      // 'users',
-      'items'
+      'users'
     ])
   }
 </script>
