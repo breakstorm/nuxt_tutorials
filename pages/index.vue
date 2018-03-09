@@ -1,5 +1,6 @@
 <template>
   <h1 class="f1 code">Hello world
+    {{ ids }}
     <ul>
     <li v-for='user in users'>{{ user.login }}</li>
   </ul>
@@ -18,7 +19,8 @@
     //     }))
     // }
     computed: mapState([
-      'users'
+      'users',
+      'ids'
     ])
   }
 </script>
